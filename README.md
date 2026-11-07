@@ -14,7 +14,7 @@
 - [X] Два бандита [`Task001`](src/ru/course/lesson02/Task001twoBandits.java)
 - [X] Болты и гайки [`Task002`](src/ru/course/lesson02/Task002boltsAndNuts.java)
 - [X] Автобусная экскурсия [`Task003`](src/ru/course/lesson02/Task003bus.java)
-- [ ] Цветочки
+- [X] Цветочки  [`Task004`](src/ru/course/lesson02/Task004flowers.java)
 - [ ] Кондиционер
 - [ ] Пасьянс старухи Шапокляк
 - [ ] Принц и Дракон
