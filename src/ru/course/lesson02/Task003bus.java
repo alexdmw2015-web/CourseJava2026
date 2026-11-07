@@ -6,14 +6,14 @@ import java.util.Scanner;
 
 public class Task003bus {
     public static void main(String[] args) {
-// Инициализация сканера
+// Инициализация сканера и исходных данных
         Scanner sc = new Scanner(System.in);
-// Ввод данных от пользователя
-        System.out.println("Введите количество мостов.");
-        int bridgeCount = sc.nextInt();
         int maxBusHeight = 437;
         boolean crash = false;
         int k = -999;
+// Ввод данных от пользователя
+        System.out.println("Введите количество мостов.");
+        int bridgeCount = sc.nextInt();
         int[] bridgeHeights = new int[bridgeCount];
         System.out.println("Введите высоту " + bridgeCount + " мостов через пробел от 1 до 1000см");
         for (int i = 0; i < bridgeCount; i++) {
