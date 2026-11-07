@@ -7,5 +7,6 @@
 4. Чашка кофе — [`Task003`](src/ru/course/lesson01/Task003coffee.java)
 
 ## Урок 2. Типы данных, ввод и вывод
-001. Два бандита — [`Task001`](src/ru/course/lesson02/Task001twoBandits.java)
-002. Болты и гайки — [`Task002`](src/ru/course/lesson02/Task002boltsAndNuts.java)
+1. Два бандита — [`Task001`](src/ru/course/lesson02/Task001twoBandits.java)
+2. Болты и гайки — [`Task002`](src/ru/course/lesson02/Task002boltsAndNuts.java)
+3. Автобусная экскурсия — [`Task003`](src/ru/course/lesson02/Task003bus.java)
