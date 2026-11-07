@@ -2,7 +2,7 @@ package ru.course.lesson01;
 
 import java.util.Scanner;
 
-public class Task001_threeNumbers {
+public class Task002threeNumbers {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
