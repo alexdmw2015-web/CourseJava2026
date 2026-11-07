@@ -1,5 +1,7 @@
 package ru.course.lesson02;
 
+// https://acmp.ru/index.asp?main=task&id_task=294
+
 public class Task002boltsAndNuts {
     public static void main(String[] args) {
 

@@ -1,5 +1,7 @@
 package ru.course.lesson02;
+
 // https://acmp.ru/index.asp?main=task&id_task=33
+
 public class Task001twoBandits {
     public static void main(String[] args) {
         int firstBandit = Integer.parseInt(IO.readln("Введите число выстрелов первого бандита: "));

@@ -1,5 +1,5 @@
 package ru.course.lesson02;
-
+// https://acmp.ru/index.asp?main=task&id_task=233
 // Подключения сканера
 
 import java.util.Scanner;
