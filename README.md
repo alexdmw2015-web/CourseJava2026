@@ -8,7 +8,26 @@
 - [X] Разности с двойным циклом [`Task002`](src/ru/course/lesson01/Task002threeNumbersV2.java)
 - [X] Чашка кофе [`Task003`](src/ru/course/lesson01/Task003coffee.java)
 
+---
+
 ## Урок 2. Типы данных, ввод и вывод в консоль
 - [X] Два бандита [`Task001`](src/ru/course/lesson02/Task001twoBandits.java)
 - [X] Болты и гайки [`Task002`](src/ru/course/lesson02/Task002boltsAndNuts.java)
 - [X] Автобусная экскурсия [`Task003`](src/ru/course/lesson02/Task003bus.java)
+- [ ] Цветочки
+- [ ] Кондиционер
+- [ ] Пасьянс старухи Шапокляк
+- [ ] Принц и Дракон
+
+---
+
+- [ ] Светофорчики
+- [ ] Байдарочный поход
+- [ ] Волосатый бизнес
+- [ ] Робот К-79
+- [ ] Вырубка деревьев
+
+---
+
+- [ ] Вирусы
+- [ ] Алхимия
