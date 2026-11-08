@@ -21,7 +21,8 @@
   `Решение`](src/ru/course/lesson02/Task003bus.java)
 - [X] Цветочки [`Задача`](https://acmp.ru/index.asp?main=task&id_task=504) | [
   `Решение`](src/ru/course/lesson02/Task004flowers.java)
-- [ ] Кондиционер [`Задача`](https://acmp.ru/index.asp?main=task&id_task=854) |
+- [x] Кондиционер [`Задача`](https://acmp.ru/index.asp?main=task&id_task=854) | [
+  `Решение`](src/ru/course/lesson02/Task005Conditioner.java)
 - [ ] Пасьянс старухи Шапокляк [`Задача`](https://acmp.ru/index.asp?main=task&id_task=521) |
 - [ ] Принц и Дракон [`Задача`](https://acmp.ru/index.asp?main=task&id_task=94) |
 
