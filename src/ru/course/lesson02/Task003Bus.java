@@ -4,7 +4,7 @@ package ru.course.lesson02;
 
 import java.util.Scanner;
 
-public class Task003bus {
+public class Task003Bus {
     public static void main(String[] args) {
 // Инициализация сканера и исходных данных
         Scanner sc = new Scanner(System.in);

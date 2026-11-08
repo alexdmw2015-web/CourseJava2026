@@ -4,7 +4,7 @@ package ru.course.lesson02;
 
 import java.util.Scanner;
 
-public class Task004flowers {
+public class Task004Flowers {
     public static void main(String[] args) {
         // Инициализация сканера
         Scanner sc = new Scanner(System.in);

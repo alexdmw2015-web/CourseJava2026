@@ -2,7 +2,7 @@ package ru.course.lesson02;
 
 // https://acmp.ru/index.asp?main=task&id_task=294
 
-public class Task002boltsAndNuts {
+public class Task002BoltsAndNuts {
     public static void main(String[] args) {
 
         int k1 = 1000, l1 = 10, m1 = 100;

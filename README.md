@@ -4,27 +4,27 @@
 
 ## Урок 1. Начало работы в IDE и основы языков программирования
 
-- [X] Ввод и вывод трех чисел [`Решение`](src/ru/course/lesson01/Task001inputOutput.java)
-- [X] Разности [`Решение`](src/ru/course/lesson01/Task002threeNumbers.java)
-- [X] Разности с двойным циклом [`Решение`](src/ru/course/lesson01/Task002threeNumbersV2.java)
-- [X] Чашка кофе [`Решение`](src/ru/course/lesson01/Task003coffee.java)
+- [X] Ввод и вывод трех чисел [`Решение`](src/ru/course/lesson01/Task001InputOutput.java)
+- [X] Разности [`Решение`](src/ru/course/lesson01/Task002ThreeNumbers.java)
+- [X] Разности с двойным циклом [`Решение`](src/ru/course/lesson01/Task002ThreeNumbersV2.java)
+- [X] Чашка кофе [`Решение`](src/ru/course/lesson01/Task003Coffee.java)
 
 ---
 
 ## Урок 2. Типы данных, ввод и вывод в консоль
 
 - [X] Два бандита [`Задача`](https://acmp.ru/index.asp?main=task&id_task=33) | [
-  `Решение`](src/ru/course/lesson02/Task001twoBandits.java)
+  `Решение`](src/ru/course/lesson02/Task001TwoBandits.java)
 - [X] Болты и гайки [`Задача`](https://acmp.ru/index.asp?main=task&id_task=294) | [
-  `Решение`](src/ru/course/lesson02/Task002boltsAndNuts.java)
+  `Решение`](src/ru/course/lesson02/Task002BoltsAndNuts.java)
 - [X] Автобусная экскурсия [`Задача`](https://acmp.ru/index.asp?main=task&id_task=233) | [
-  `Решение`](src/ru/course/lesson02/Task003bus.java)
+  `Решение`](src/ru/course/lesson02/Task003Bus.java)
 - [X] Цветочки [`Задача`](https://acmp.ru/index.asp?main=task&id_task=504) | [
-  `Решение`](src/ru/course/lesson02/Task004flowers.java)
+  `Решение`](src/ru/course/lesson02/Task004Flowers.java)
 - [x] Кондиционер [`Задача`](https://acmp.ru/index.asp?main=task&id_task=854) | [
   `Решение`](src/ru/course/lesson02/Task005Conditioner.java)
-- [ ] Пасьянс старухи Шапокляк [`Задача`](https://acmp.ru/index.asp?main=task&id_task=521) |
-- [ ] Принц и Дракон [`Задача`](https://acmp.ru/index.asp?main=task&id_task=94) |
+- [x] Пасьянс старухи Шапокляк [`Задача`](https://acmp.ru/index.asp?main=task&id_task=521) | [`Решение`](src/ru/course/lesson02/Task006Solitaire.java)
+- [X] Принц и Дракон [`Задача`](https://acmp.ru/index.asp?main=task&id_task=94) |  | [`Решение`](src/ru/course/lesson02/Task007PrinceAndDragon.java)
 
 ---
 

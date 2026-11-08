@@ -2,7 +2,7 @@ package ru.course.lesson01;
 
 import java.util.Scanner;
 
-public class Task001inputOutput {
+public class Task001InputOutput {
 
     public static void main() { // Обязательная магия, указывающая начало программы
 
