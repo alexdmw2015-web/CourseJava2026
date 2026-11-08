@@ -15,22 +15,22 @@
 
 - [X] Два бандита [`Задача`](https://acmp.ru/index.asp?main=task&id_task=33) | 
 - [`Решение`](src/ru/course/lesson02/Task001twoBandits.java)
-- [X] Болты и гайки [`Task002`](src/ru/course/lesson02/Task002boltsAndNuts.java)
-- [X] Автобусная экскурсия [`Task003`](src/ru/course/lesson02/Task003bus.java)
-- [X] Цветочки  [`Task004`](src/ru/course/lesson02/Task004flowers.java)
-- [ ] Кондиционер
-- [ ] Пасьянс старухи Шапокляк
-- [ ] Принц и Дракон
+- [X] Болты и гайки [`Задача`](https://acmp.ru/index.asp?main=task&id_task=294) | [`Решение`](src/ru/course/lesson02/Task002boltsAndNuts.java)
+- [X] Автобусная экскурсия [`Задача`](https://acmp.ru/index.asp?main=task&id_task=233) | [`Решение`](src/ru/course/lesson02/Task003bus.java)
+- [X] Цветочки [`Задача`](https://acmp.ru/index.asp?main=task&id_task=504) | [`Решение`](src/ru/course/lesson02/Task004flowers.java)
+- [ ] Кондиционер [`Задача`](https://acmp.ru/index.asp?main=task&id_task=854) |
+- [ ] Пасьянс старухи Шапокляк [`Задача`](https://acmp.ru/index.asp?main=task&id_task=521) |
+- [ ] Принц и Дракон [`Задача`](https://acmp.ru/index.asp?main=task&id_task=94) |
 
 ---
 
-- [ ] Светофорчики
-- [ ] Байдарочный поход
-- [ ] Волосатый бизнес
-- [ ] Робот К-79
-- [ ] Вырубка деревьев
+- [ ] Светофорчики [`Задача`](https://acmp.ru/index.asp?main=task&id_task=124) |
+- [ ] Байдарочный поход [`Задача`](https://acmp.ru/index.asp?main=task&id_task=869) |
+- [ ] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) |
+- [ ] Робот К-79 [`Задача`](https://acmp.ru/index.asp?main=task&id_task=235) |
+- [ ] Вырубка деревьев [`Задача`](https://acmp.ru/index.asp?main=task&id_task=24) |
 
 ---
 
-- [ ] Вирусы
-- [ ] Алхимия
+- [ ] Вирусы [`Задача`](https://acmp.ru/index.asp?main=task&id_task=951) |
+- [ ] Алхимия [`Задача`](https://acmp.ru/index.asp?main=task&id_task=743) |
