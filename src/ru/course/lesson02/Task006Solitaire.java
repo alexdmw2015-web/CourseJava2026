@@ -1,5 +1,5 @@
 package ru.course.lesson02;
-
+// https://acmp.ru/index.asp?main=task&id_task=521
 import java.util.Scanner;
 public class Task006Solitaire {
     public static void main(String[] args) {
