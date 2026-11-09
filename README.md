@@ -29,7 +29,7 @@
 ---
 
 - [ ] Светофорчики [`Задача`](https://acmp.ru/index.asp?main=task&id_task=124) |
-- [ ] Байдарочный поход [`Задача`](https://acmp.ru/index.asp?main=task&id_task=869) |
+- [x] Байдарочный поход [`Задача`](https://acmp.ru/index.asp?main=task&id_task=869) | [`Решение`](src/ru/course/lesson02/Task009Kayaks.java)
 - [ ] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) |
 - [ ] Робот К-79 [`Задача`](https://acmp.ru/index.asp?main=task&id_task=235) |
 - [ ] Вырубка деревьев [`Задача`](https://acmp.ru/index.asp?main=task&id_task=24) |
