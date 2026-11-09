@@ -1,5 +1,5 @@
 package ru.course.lesson02;
-
+// https://acmp.ru/index.asp?main=task&id_task=869
 import java.util.Scanner;
 import java.util.Arrays;
 
