@@ -19,19 +19,26 @@ public class Task003Bus {
             bridgeHeights[i] = sc.nextInt();
         }
 // Обработка результатов
+/*
+        for (int i = 0; i < bridgeHeights.length; i++) {
+            if (BusHeight >= bridgeHeights[i]) {
+                crashed = true;
+                k = i + 1;
+                break;
+            }
+        }
+*/
         int k = 0; // счетчик количества мостов
-        int crashIndex = -999; // мост, где случилась авария
         while (k < bridgeCount && !crashed) {
             if (busHeight >= bridgeHeights[k]) {
                 crashed = true;
-                crashIndex = k+1;
             }
             k++;
         }
 
         // Вывод результатов
         if (crashed) {
-            System.out.println("Crash " + crashIndex);
+            System.out.println("Crash " + k);
         } else {
             System.out.println("No crash");
         }
