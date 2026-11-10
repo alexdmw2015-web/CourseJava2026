@@ -37,4 +37,5 @@
 ---
 
 - [ ] Вирусы [`Задача`](https://acmp.ru/index.asp?main=task&id_task=951) |
-- [ ] Алхимия [`Задача`](https://acmp.ru/index.asp?main=task&id_task=743) |
+- [ ] Алхимия [`Задача`](https://acmp.ru/index.asp?main=task&id_task=743) | 
+- [ ] Банкомат |
