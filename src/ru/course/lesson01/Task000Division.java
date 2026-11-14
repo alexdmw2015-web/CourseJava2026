@@ -6,9 +6,10 @@ public class Task000Division {
     public static void main() {
         Scanner sc = new Scanner(System.in);
         System.out.print("Введите два числа через пробел: ");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        float c = (float) ((double) a / (double) b);
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = a / b;
         System.out.printf("%.2f%n", c);
+        System.out.print(c);
     }
 }

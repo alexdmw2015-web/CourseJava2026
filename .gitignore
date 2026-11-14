@@ -41,3 +41,9 @@ Thumbs.db
 # Java
 *.class
 *.log
+
+# исключить конкретный пакет
+src/ru/course/javaRush/
+
+# онлайн уроки
+src/ru/course/onlineVstrechi/
