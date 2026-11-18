@@ -1,86 +1,99 @@
 package ru.course.lesson02;
 // https://acmp.ru/index.asp?main=task&id_task=869
-import java.util.Scanner;
+
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class Task009Kayaks {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner(System.in);
 
         // --- Чтение N (количество участников) и D (грузоподъёмность байдарки) ---
-        System.out.print("Введите N и D через пробел: ");
+        int[] ND = getNumberOfPeopleAndBoatCapacity();
 
-        if (!sc.hasNextInt()) {
-            System.out.println("Ошибка: ожидалось целое число N");
-            sc.close();
-            return;
-        }
-        int n = sc.nextInt();
+        // --- Чтение веса участников --
+        ArrayList<Integer> weightsOfPeople = getWeights(ND[0]);
 
-        if (!sc.hasNextInt()) {
-            System.out.println("Ошибка: ожидалось целое число D");
-            sc.close();
-            return;
-        }
-        int capacity = sc.nextInt();
+        //--- Обработка: минимальное число байдарок
+        int kayakCount = getNumberOfKayaks(ND[1], weightsOfPeople);
+        //--- Вывод результата
+        IO.println(kayakCount);
+    }
 
-        // Проверка N по условию: 1 ≤ N ≤ 15000
-        if (n < 1 || n > 15000) {
-            System.out.println("Ошибка: N должно быть в диапазоне 1..15000");
-            sc.close();
-            return;
-        }
+    public static int[] getNumberOfPeopleAndBoatCapacity() {
+                String line = IO.readln("Введите кол-во участников похода и макс. грузоподъемность лодки через пробел: ");
+        String[] parts = line.trim().split("\\s+");
+        return new int[] {
+                Integer.parseInt(parts[0]),   // n
+                Integer.parseInt(parts[1])
+        };
+    }
 
-        // Проверка D по условию: 1 ≤ D ≤ 15000
-        if (capacity < 1 || capacity > 15000) {
-            System.out.println("Ошибка: D должно быть в диапазоне 1..15000");
-            sc.close();
-            return;
-        }
+//    public static int[] getWeights(int numberOfPeople) {
+//        String line = IO.readln("Введите " + numberOfPeople + " весов через пробел: ");
+//
+//        String[] parts = line.trim().split("\\s+");
+//        if (parts.length < numberOfPeople) {
+//            IO.println("Ошибка: нужно " + numberOfPeople + " числа, получено " + parts.length);
+//            return new int[0];
+//        }
+//        int[] weights = new int[numberOfPeople];
+//
+//        for (int i = 0; i < numberOfPeople; i++) {
+//            weights[i] = Integer.parseInt(parts[i]);
+//        }
+//        return weights;
+//    }
 
-        // --- Чтение веса участников ---
-        int[] weights = new int[n];
-        System.out.print("Введите вес для " + n + " участников через пробел: ");
+    public static ArrayList<Integer> getWeights(int numberOfPeople) {
+        String line = IO.readln("Введите вес " + numberOfPeople + " человек через пробел: ");
 
-        for (int i = 0; i < n; i++) {
-            if (!sc.hasNextInt()) {
-                System.out.println("Ошибка: ожидалось " + n + " целых чисел, получено " + i);
-                sc.close();
-                return;
-            }
-            weights[i] = sc.nextInt();
-
-            // Проверка веса по условию: 1 ≤ Mi ≤ D
-            if (weights[i] < 1 || weights[i] > capacity) {
-                System.out.println("Ошибка: вес участника #" + (i + 1)
-                        + " должен быть в диапазоне 1.." + capacity);
-                sc.close();
-                return;
-            }
+        String[] parts = line.trim().split("\\s+");
+        if (line.trim().isEmpty() || parts.length != numberOfPeople) {
+            IO.println("Ошибка: нужно " + numberOfPeople + " чисел, получено " + parts.length);
+            return new ArrayList<>();
         }
 
-        // --- Обработка: минимальное число байдарок (два указателя) ---
-        // Сортируем веса по возрастанию
-        Arrays.sort(weights);
+        ArrayList<Integer> weights = new ArrayList<>();
+        for (int i = 0; i < numberOfPeople; i++) {
+            weights.add(Integer.parseInt(parts[i]));
+        }
+        return weights;                          // ← возврат
+    }
 
-        int left = 0;              // указатель на самого лёгкого
-        int right = n - 1;         // указатель на самого тяжёлого
-        int kayakCount = 0;        // счётчик использованных байдарок
+    // --- Версия для int[] (основная логика) ---
+    public static int getNumberOfKayaks(int maxLoad, int[] weights) {
+        Arrays.sort(weights);                 // ⚠️ мутирует исходный массив
+        int left = 0;
+        int right = weights.length - 1;
+        int kayakCount = 0;
 
         while (left <= right) {
-            // Если самый лёгкий помещается вместе с самым тяжёлым —
-            // берём обоих в одну байдарку
-            if (weights[left] + weights[right] <= capacity) {
+            if (weights[left] + weights[right] <= maxLoad) {
                 left++;
             }
-            // Самый тяжёлый всегда занимает байдарку (один или с лёгким)
             right--;
             kayakCount++;
         }
+        return kayakCount;
+    }
 
-        // --- Вывод результата ---
-        System.out.println(kayakCount);
+    // --- Версия с перегрузкой функции для ArrayList ---
+    public static int getNumberOfKayaks(int maxLoad, ArrayList<Integer> weights) {
+        // Копируем Arraylist, чтобы он не мутировал
+        ArrayList<Integer> copy = new ArrayList<>(weights);
+        Collections.sort(copy);
+        int kayakCount = 0;
 
-        sc.close();
+        while (!copy.isEmpty()) {
+            int heaviest = copy.remove(copy.size() - 1);
+            kayakCount++;
+
+            if (!copy.isEmpty() && copy.get(0) + heaviest <= maxLoad) {
+                copy.remove(0);
+            }
+        }
+        return kayakCount;
     }
 }
