@@ -30,8 +30,8 @@
 
 - [ ] Светофорчики [`Задача`](https://acmp.ru/index.asp?main=task&id_task=124) |
 - [x] Байдарочный поход [`Задача`](https://acmp.ru/index.asp?main=task&id_task=869) | [`Решение`](src/ru/course/lesson02/Task009Kayaks.java)
-- [ ] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) | [`Решение1`](src/ru/course/lesson02/HairBusiness.java)
-- [ ] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) | [`Решение2`](src/ru/course/lesson02/HairBusinessBinaryMask.java)
+- [x] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) | [`Решение1`](src/ru/course/lesson02/HairBusiness.java)
+- [x] Волосатый бизнес [`Задача`](https://acmp.ru/index.asp?main=task&id_task=39) | [`Решение2`](src/ru/course/lesson02/HairBusinessBinaryMask.java)
 - [ ] Робот К-79 [`Задача`](https://acmp.ru/index.asp?main=task&id_task=235) |
 - [ ] Вырубка деревьев [`Задача`](https://acmp.ru/index.asp?main=task&id_task=24) |
 
