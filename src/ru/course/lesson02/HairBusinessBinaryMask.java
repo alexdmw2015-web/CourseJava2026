@@ -14,45 +14,7 @@ public class HairBusinessBinaryMask {
     private static final Path IN_PATH  = Path.of("src/ru/course/lesson02/INPUT.txt");
     private static final Path OUT_PATH = Path.of("src/ru/course/lesson02/OUTPUT.md");
 
-    /** Результат одной комбинации. */
-    static class Combo {
-        int mask;
-        String bits;
-        long sum;
-        long[] daily;
-
-        Combo(int mask, String bits, long sum, long[] daily) {
-            this.mask = mask;
-            this.bits = bits;
-            this.sum = sum;
-            this.daily = daily;
-        }
-    }
-
-    /** Входные данные задачи. */
-    static class Input {
-        int n;
-        int[] c;
-
-        Input(int n, int[] c) {
-            this.n = n;
-            this.c = c;
-        }
-    }
-
-    /** Результат расчёта: все комбинации + максимальная сумма. */
-    static class Result {
-        int n;
-        List<Combo> combos;
-        long bestMoney;
-
-        Result(int n, List<Combo> combos, long bestMoney) {
-            this.n = n;
-            this.combos = combos;
-            this.bestMoney = bestMoney;
-        }
-    }
-
+    // ======================= ТОЧКА ВХОДА =======================
     public static void main(String[] args) throws IOException {
         Input input   = readInput(IN_PATH);
         Result result = calculate(input);
@@ -60,6 +22,7 @@ public class HairBusinessBinaryMask {
         System.out.println("Результат записан в " + OUT_PATH);
         System.out.println("Максимальная сумма: " + result.bestMoney);
     }
+    // ===========================================================
 
     /** Чтение входных данных из txt-файла. */
     private static Input readInput(Path path) throws IOException {
@@ -113,11 +76,10 @@ public class HairBusinessBinaryMask {
 
     /** Вывод результата в Markdown-таблицу. */
     private static void writeOutput(Path path, Result result) throws IOException {
-        int n = result.n;
         try (PrintWriter pw = new PrintWriter(Files.newBufferedWriter(path, StandardCharsets.UTF_8))) {
             pw.println("1 = продавать, 0 = держать");
             pw.println();
-            writeTableHeader(pw, n);
+            writeTableHeader(pw, result.n);
             writeTableRows(pw, result);
         }
     }
@@ -149,6 +111,43 @@ public class HairBusinessBinaryMask {
             }
             pw.println(row);
             idx++;
+        }
+    }
+
+    // ===================== ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ =====================
+    static class Combo {
+        int mask;
+        String bits;
+        long sum;
+        long[] daily;
+
+        Combo(int mask, String bits, long sum, long[] daily) {
+            this.mask = mask;
+            this.bits = bits;
+            this.sum = sum;
+            this.daily = daily;
+        }
+    }
+
+    static class Input {
+        int n;
+        int[] c;
+
+        Input(int n, int[] c) {
+            this.n = n;
+            this.c = c;
+        }
+    }
+
+    static class Result {
+        int n;
+        List<Combo> combos;
+        long bestMoney;
+
+        Result(int n, List<Combo> combos, long bestMoney) {
+            this.n = n;
+            this.combos = combos;
+            this.bestMoney = bestMoney;
         }
     }
 }
